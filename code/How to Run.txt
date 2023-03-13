@@ -1,0 +1,22 @@
+Run Steps: 
+
+Run Files:
+	1 - feature engineering 1.ipynb
+	2 - numeric feature 2.ipynb
+	3 - fill_na_pipeline and ml.ipynb
+
+
+
+
+To show File Deployment (Streamlit file)
+Run 
+
+	deployment.py
+
+
+
+
+---- To Show Auto Machien learning and Auto visualization
+
+Run 
+	-Auto_Virtualization_and_ML.ipynb
