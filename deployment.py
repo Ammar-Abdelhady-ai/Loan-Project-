@@ -2,7 +2,7 @@ import streamlit as sl
 import pandas as pd
 import joblib
 
-path = r"D:\other\Epsilon\Epsilon Training\project 2\my solution_project_2\save files"
+path = r"D:\Loan-Project\save files"
 
 column = joblib.load(f"{path}\\input.h5")
 model = joblib.load(f"{path}\\model.h5")
@@ -121,6 +121,7 @@ with sl.form("Form", clear_on_submit=True):
         try: 
             result = pred(gender, married, dependents, education, employed, income, coap_income, load, term, hist, area)
             prediction = result[0]
+            print(prediction)
             data = result[-1]
         except:
             sl.warning("Sorry Error in Model procse !")
